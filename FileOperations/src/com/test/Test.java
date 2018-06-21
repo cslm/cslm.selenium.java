@@ -1,40 +1,32 @@
 package com.test;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Test 
 {
-	public static void main(String[] args) throws IOException 
+	public static void main(String[] args) throws IOException
 	{
-		File f_old = new File("D:/Java Courses/FileByteWrite/files/picByte.jpg");
-		File f_new = new File("D:/Java Courses/FileByteWrite/files/picByte1.jpg");	
-		FileInputStream fis = null;
-		FileOutputStream fos = null;
-		try 
+		File f = new File("C:\\Users\\marcoc\\Dropbox\\cslm sourcecode\\cslm.selenium.java\\FileOperations\\files\\text.txt");
+		System.out.println("文件名：" + f.getName()); //得到文件名
+		System.out.println("文件路径：" + f.getAbsolutePath()); //得到文件的绝对路径
+		System.out.println("文件大小：" + f.length()); //得到文件大小
+		System.out.println("文件是否存在：" + f.exists()); //判断文件是否存在
+		f.delete(); //删除文件
+		
+		if(!f.exists())
 		{
-			fis = new FileInputStream(f_old);
-			fos = new FileOutputStream(f_new);
-			
-			int n = 0;
-			byte b[] = new byte[200];
-			n = fis.read(b);
-			
-			while(n != -1)
+			f.createNewFile(); //如果文件不存在就新建一个 
+		}
+		
+		/*File folder = new File("C:\\Users\\marcoc\\Dropbox\\cslm sourcecode\\cslm.selenium.java\\FileOperations\\files");
+		if(folder.isDirectory())
+		{
+			File[] fileList = folder.listFiles();
+			for(int i = 0; i < fileList.length; i++)
 			{
-				fos.write(b, 0, n); //把当前读入b数组的所有字节进行写入
-				n = fis.read(b);
+				System.out.println(fileList[i]);
 			}
-		} 
-		catch (Exception e) 
-		{
-			e.printStackTrace();
-		}
-		finally
-		{
-			fis.close();
-			fos.close();
-		}
+		}*/
 	}
 }

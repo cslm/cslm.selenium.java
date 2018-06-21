@@ -1,4 +1,5 @@
 package com.test;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,10 +9,12 @@ public class Test
 {
 	public static void main(String[] args) throws IOException 
 	{
-		File f_old = new File("D:/Java Courses/FileByteWrite/files/picByte.jpg");
-		File f_new = new File("D:/Java Courses/FileByteWrite/files/picByte1.jpg");	
+		File f_old = new File("C:\\Users\\marcoc\\Dropbox\\cslm sourcecode\\cslm.selenium.java\\FileOperations\\files\\picByte.jpg");
+		File f_new = new File("C:\\Users\\marcoc\\Dropbox\\cslm sourcecode\\cslm.selenium.java\\FileOperations\\files\\picByte1.jpg");
+		
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
+
 		try 
 		{
 			fis = new FileInputStream(f_old);

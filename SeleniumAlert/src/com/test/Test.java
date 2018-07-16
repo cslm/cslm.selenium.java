@@ -22,26 +22,7 @@ public class Test
 			driver.findElement(By.id("confirmId")).click();
 			Thread.sleep(5000);
 			alert = driver.switchTo().alert();
-			alert.accept();
-			
-			//点击CANCEL按钮后点击OK
-			driver.findElement(By.className("CANCEL")).click();
-			Thread.sleep(5000);
-			alert = driver.switchTo().alert();
-			alert.accept();
-			
-			//点击CANCEL按钮后点击cancel
-			driver.findElement(By.className("CANCEL")).click();
-			Thread.sleep(5000);
-			alert = driver.switchTo().alert();
-			alert.dismiss();
-			
-			//提示框中输入文字
-			driver.findElement(By.name("exit")).click();
-			Thread.sleep(5000);
-			alert = driver.switchTo().alert();
-			alert.sendKeys("你猜");
-			alert.accept();
+			System.out.println(alert.getText());
 		} 
 		catch (InterruptedException e) 
 		{

@@ -14,6 +14,7 @@ public class DriverManager
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
+		
 		return driver;
 	}
 	

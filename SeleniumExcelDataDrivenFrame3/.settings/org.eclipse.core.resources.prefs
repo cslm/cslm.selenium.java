@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/testalliance/hrsystem/managers/TestRunner.java=UTF-8
+encoding//src/com/testalliance/hrsystem/pageobj/EmpPage.java=UTF-8
+encoding//src/com/testalliance/hrsystem/pageobj/LoginPage.java=UTF-8
+encoding//src/com/testalliance/hrsystem/test/Test.java=UTF-8
+encoding//src/com/testalliance/hrsystem/tests/employee/TCEmp1.java=UTF-8
+encoding//src/com/testalliance/hrsystem/tests/login/TCLogin1.java=UTF-8
+encoding//src/com/testalliance/hrsystem/tests/login/TCLogin2.java=UTF-8
+encoding//src/com/testalliance/hrsystem/tests/login/TCLogin3.java=UTF-8
+encoding//src/com/testalliance/hrsystem/tests/login/TCLogin4.java=UTF-8

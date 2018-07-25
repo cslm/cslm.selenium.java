@@ -1,2 +1,0 @@
-driver,path,browser,modules
-webdriver.chrome.driver,C:/tools/chromedriver.exe,chrome,{login}

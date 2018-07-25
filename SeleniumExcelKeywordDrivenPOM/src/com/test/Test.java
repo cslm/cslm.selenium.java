@@ -84,6 +84,13 @@ public class Test
 		        		System.out.println("正在验证元素" + row.getCell(2).toString() 
 		        				+ "是否显示： " + b);
 		        		break;
+		        	case "login":
+		        		//...
+		        		break;
+		        	case "logout":
+		        		//...
+		        		break;
+		        	//...
 		        }
 		    }
 		    if(b)
